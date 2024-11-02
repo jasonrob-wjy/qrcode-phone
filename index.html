@@ -1,28 +1,53 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>拨打电话</title>
+    <title>挪车电话拨打</title>
     <style>
       body {
-        text-align: center;
-        padding-top: 50px;
         font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        text-align: center;
+        padding: 20px;
+      }
+      .auto {
+        margin: auto;
+      }
+      h1 {
+        margin-bottom: 20px;
       }
       .call-button {
-        font-size: 24px;
-        padding: 10px 20px;
-        color: #fff;
-        background-color: #1d72b8;
+        background-color: #4caf50;
+        color: white;
+        padding: 15px 30px;
+        font-size: 18px;
         border: none;
-        border-radius: 5px;
-        text-decoration: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      .call-button:hover {
+        background-color: #45a049;
+      }
+      .footer {
+        margin-top: 40px;
+        font-size: 14px;
+        color: #777;
       }
     </style>
   </head>
   <body>
-    <h1>点击按钮拨打电话</h1>
-    <a href="tel:19381633925" class="call-button">拨打电话</a>
+    <div class="auto">
+      <img src="./icons8-kiss-panda.gif" alt="kiss kiss" />
+      <h1>SORRY</h1>
+      <button
+        class="call-button"
+        onclick="window.location.href='tel:19381633925'"
+      >
+        拨打电话挪车
+      </button>
+      <div class="footer">© 2024 Jansonrob</div>
+    </div>
   </body>
 </html>
